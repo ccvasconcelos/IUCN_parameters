@@ -35,7 +35,7 @@ the user/assessor.
 
 | File | Description |
 |---|---|
-| `IUCN_assessment.R` | Commented R script that runs the full workflow, from reading occurrence data to summarising the spatial parameters. |
+| `Calc_IUCN_assessment.R` | Commented R script that runs the full workflow, from reading occurrence data to summarising the spatial parameters. |
 | `georeferenced_specimens.csv` | Example occurrence dataset (georeferenced records for one species). Columns: `tax` (taxon name), `voucher` (specimen/record identifier), `ddlat`/`ddlon` (decimal-degree coordinates), `source` (`original` or `estimated` coordinate). |
 
 ## Requirements
@@ -52,9 +52,9 @@ install.packages(c("sf", "rnaturalearth"))
 
 ## How to run
 
-1. Keep `IUCN_assessment.R` and `georeferenced_specimens.csv` in the same folder (or an R
+1. Keep `Calc_IUCN_assessment.R` and `georeferenced_specimens.csv` in the same folder (or an R
    Project created in that folder).
-2. Open `IUCN_assessment.R` in R/RStudio and run it top to bottom.
+2. Open `Calc_IUCN_assessment.R` in R/RStudio and run it top to bottom.
 3. The script prints/returns EOO, AOO, number of subpopulations, number of
    locations, and the severe-fragmentation result, plus a simple map of the
    EOO polygon.
@@ -65,6 +65,15 @@ If you use this script or data, please cite:
 
 > Vasconcelos, CC (2026). R script and example data to calculate IUCN Red List Criterion B spatial parameters using ConR.
 > Zenodo. https://doi.org/10.5281/zenodo.22822017
+
+The example occurrence dataset was compiled for, and the resulting
+parameters discussed in:
+
+> da Cunha, K.C.M., Durgante, F.M., Rivera-Parada, L.L., da Gama, I.G.,
+> Ferreira, G., Amoêdo, S.C., Vasconcelos, C.C. Environmental
+> specialization decouples geographic range and habitat occupancy in
+> *Ragala ucuquirana-branca* (Sapotaceae) across the Amazon Basin.
+> https://doi.org/10.5091/plecevo.185741
 
 And the underlying method/package:
 
