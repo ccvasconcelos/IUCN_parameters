@@ -63,7 +63,7 @@ install.packages(c("sf", "rnaturalearth"))
 
 If you use this script or data, please cite:
 
-> Vasconcelos, CC (2026). R script and example data to calculate IUCN Red List Criterion B spatial parameters using ConR.
+> Vasconcelos, C.C. (2026). R script and example data to calculate IUCN Red List Criterion B spatial parameters using ConR.
 > Zenodo. https://doi.org/10.5281/zenodo.22822017
 
 The example occurrence dataset was compiled for, and the resulting
